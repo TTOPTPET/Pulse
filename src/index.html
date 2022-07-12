@@ -23,7 +23,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
             
@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <button class="button button_main">заказать консультацию</button>
+                <button data-modal="consultation" class="button button_main">заказать консультацию</button>
                 <div class="promo__link">
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -95,9 +95,9 @@
             <div class="consultation__descr">
                 Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="tel">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">Заказать консультацию</button>
@@ -427,9 +427,64 @@
         </div>
     </section>
 
+    <footer class="footer">
+
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1043316f329be6e9055fb4fb3a37f1c254ca5f8b39cce85baba547530634fdf2&amp;source=constructor" width="100%" height="630" frameborder="0"></iframe>
+
+        <div class="footer__info">
+            <address class="footer__address">Владимир, Верхняя Дуброва, 30</address>
+            <a class="footer__tel" href="tel:84999228974">8 (499) 922-89-74</a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item"><img src="icons/footer/facebook.svg" alt="facebook"></a>
+                <a href="#" class="footer__social-item"><img src="icons/footer/instagram.svg" alt="instagramm"></a>
+                <a href="#" class="footer__social-item"><img src="icons/footer/pintrest.svg" alt="pintrest"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt26" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">Заказать консультацию</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_mt26" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+
+    </div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
+
+    
 </body>
 </html>
