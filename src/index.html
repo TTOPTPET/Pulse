@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
-                    <img src="icons/first screen/pulse_logo.png" alt="pulse_logo">
+                    <img src="icons/first_screen/pulse_logo.png" alt="pulse_logo">
                 </a>
                 <div class="header__official">
                     Официальный представитель
@@ -33,17 +34,17 @@
 
                 <div class="promo__icons">
                     <div class="promo_icon">
-                        <img src="icons/first screen/clock.png" alt="clock">
+                        <img src="icons/first_screen/clock.png" alt="clock">
                         Время подбора:
                         10 минут
                     </div>
                     <div class="promo_icon">
-                        <img src="icons/first screen/cart.png" alt="hand_cart">
+                        <img src="icons/first_screen/cart.png" alt="hand_cart">
                         Бесплатная
                         доставка
                     </div>
                     <div class="promo_icon">
-                        <img src="icons/first screen/messages.png" alt="message">
+                        <img src="icons/first_screen/messages.png" alt="message">
                         Ответим
                         на все вопросы
                     </div>
@@ -72,7 +73,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__text">
                         Мы работаем для того,<br>чтобы Ваши занятия спортом шли на<br>пользу Вашему здоровью и были в<br>радость Вам и Вашим близким!
@@ -392,7 +393,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
 
-            <div class="feedback__item">
+            <div class="feedback__item animate__animated animate__fadeInRightBig wow" data-wow-duration="2s" data-wow-delay="0.5s">
                 <img src="img/feedback/photo_1.png" alt="photo" class="feedback__item_img">
                 <div class="feedback__item_descr">
                     <div class="feedback__item_name">Ирина Иванченко </div>
@@ -403,7 +404,7 @@
                 </div>
             </div>
 
-            <div class="feedback__item">
+            <div class="feedback__item animate__animated animate__fadeInRightBig wow" data-wow-duration="2s" data-wow-delay="0.5s">
                 <img src="img/feedback/photo_2.png" alt="photo" class="feedback__item_img">
                 <div class="feedback__item_descr">
                     <div class="feedback__item_name">Иван Сёмочкин</div>
@@ -414,7 +415,7 @@
                 </div>
             </div>
 
-            <div class="feedback__item">
+            <div class="feedback__item animate__animated animate__fadeInRightBig wow" data-wow-duration="2s" data-wow-delay="0.5s">
                 <img src="img/feedback/photo_3.png" alt="photo" class="feedback__item_img">
                 <div class="feedback__item_descr">
                     <div class="feedback__item_name">Юлия Дашкина</div>
@@ -478,11 +479,17 @@
 
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <a href="#up" class="pageup">
+        <img src="icons/up/up.svg" alt="up">
+    </a>
+    
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 
     
